@@ -8,6 +8,7 @@ dotenv.config(); // Ensure this is called first
 
 const app = express();
 app.use(cors());//cosr is used for communicating between two website it's a kind of protocol
+app.use(express.json())
 app.use('/api',router);//routing the api 
 
 const PORT = process.env.PORT || 8080; // Corrected port fallback order

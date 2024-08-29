@@ -9,7 +9,7 @@ const userSchema =new mongoose.Schema({
         required:true
     },
     password:String,
-    profilePic:String
+    profilePic:String,
 },{
     timestamps:true
 })
@@ -17,3 +17,4 @@ const userSchema =new mongoose.Schema({
 
 const userModel= mongoose.model("user",userSchema)
 export default userModel;
+
